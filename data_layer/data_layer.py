@@ -5,10 +5,10 @@ import os
 class DataLayer:
     def __init__(self):
         load_dotenv()
-        server = os.getenv('DB_SERVER')
-        database = os.getenv('DB_NAME')
-        username = os.getenv('DB_USER')
-        password = os.getenv('DB_PASSWORD')
+        server = os.getenv('DESKTOP-ET8UBTH\SQLEXPRESS')
+        database = os.getenv('PasswordManager')
+        username = os.getenv('sa')
+        password = os.getenv('303606887')
         try:
             self.conn = pyodbc.connect(
                 f'DRIVER={{ODBC Driver 17 for SQL Server}};'
